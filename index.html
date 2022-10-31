@@ -7,12 +7,27 @@
         <div id="main">
             <div id="contacts">
                 <h1 class="contactHeading">CONTACTS</h1>
+                <ul>
+                    <li><button onclick="deezToggle()" class="contact">Deez</button></li>
+                    <li><button onclick="ligmaToggle()" class="contact">Ligma</button></li>
+                    <li><button onclick="sugondeseToggle()" class="contact">Sugondese</button></li>
+                </ul>
             </div>
             <div id="mainChat">
-                <h1 class="chatName">DEEZ</h1>
+                <h1 id="chatNameBar">Welcome</h1>
+                <div class="chatBox" id="chatBox1" style="display:none">
+                    <p>This is box 1</p>
+                </div>
+                <div class="chatBox" id="chatBox2" style="display:none">
+                    <p>This is box 2</p>
+                </div>
+                <div class="chatBox" id="chatBox3" style="display:none">
+                    <p>This is box 3</p>
+                </div>
                 <button class="sendButton" type="submit">Send</button>
                 <input class="chatbar" type="text" placeholder="Write a message">
             </div>
         </div>
+        <script src="./script.js"></script>
     </body>
 </html>
