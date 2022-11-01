@@ -84,3 +84,12 @@ li{
     height:90%;
     font-size:50px;
 }
+
+#chatIntroductionHeader{
+    padding:2px 20px 2px 20px;
+}
+
+#chatIntroduction{
+    font-size: 40px;
+    padding:2px 20px 2px 20px;
+}
