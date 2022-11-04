@@ -25,17 +25,36 @@
                     <p id="chatIntroductionHeader">Welcome to my chatting page!</p>
                     <p id="chatIntroduction">Please select someone from your contact list found on the left side to start chatting!</p>
                 </div>
+
                 <div class="chatBox" id="chatBox1" style="display:none">
-                    <p>This is box 1</p>
+                    <div id="messageContainer1" class="messageContainer">
+                        <p class="boxHeader">This is box 1</p>
+                    </div>
+                    <div class="chatSection">
+                        <button id="sendButton"class="sendButton" type="submit" onclick="sendMessage()">Send</button>
+                        <input id="chatContent1" class="chatbar" type="text" placeholder="Write a message">
+                    </div>
                 </div>
+
                 <div class="chatBox" id="chatBox2" style="display:none">
-                    <p>This is box 2</p>
+                    <div id="messageContainer2" class="messageContainer">
+                        <p class="boxHeader">This is box 2</p>
+                    </div>
+                    <div class="chatSection">
+                        <button id="sendButton"class="sendButton" type="submit" onclick="sendMessage()">Send</button>
+                        <input id="chatContent2" class="chatbar" type="text" placeholder="Write a message">
+                    </div>
                 </div>
+
                 <div class="chatBox" id="chatBox3" style="display:none">
-                    <p>This is box 3</p>
+                    <div id="messageContainer3" class="messageContainer">
+                        <p class="boxHeader">This is box 3</p>
+                    </div>
+                    <div class="chatSection">
+                        <button id="sendButton"class="sendButton" type="submit" onclick="sendMessage()">Send</button>
+                        <input id="chatContent3" class="chatbar" type="text" placeholder="Write a message">
+                    </div>
                 </div>
-                <button class="sendButton" type="submit">Send</button>
-                <input class="chatbar" type="text" placeholder="Write a message">
             </div>
         </div>
         <script src="./script.js"></script>
