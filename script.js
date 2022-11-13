@@ -43,9 +43,7 @@ document.addEventListener('keydown', function (event){
 })
 
 function sendMessage1(){
-    if(chatContent1.value == " "){
-        
-    }else{
+    if(chatContent1.value != " "){
         (chatBox1.style.display == 'block')
         const para = document.createElement("p");
         const node = document.createTextNode(chatContent1.value);
@@ -54,13 +52,7 @@ function sendMessage1(){
         element.appendChild(para);
         chatContent1.value = ' ';
         para.scrollIntoView();
-    }
-}
-
-function sendMessage2(){
-    if(chatContent2.value == " "){
-        
-    }else{
+    }else if(chatContent2.value != " "){
         (chatBox2.style.display == 'block')
         const para = document.createElement("p");
         const node = document.createTextNode(chatContent2.value);
@@ -69,12 +61,7 @@ function sendMessage2(){
         element.appendChild(para);
         chatContent2.value = ' ';
         para.scrollIntoView();
-    }
-}
-function sendMessage3(){
-    if(chatContent3.value == " "){
-        
-    }else{
+    }else if(chatContent3.value != " "){
         (chatBox3.style.display == 'block')
         const para = document.createElement("p");
         const node = document.createTextNode(chatContent3.value);
