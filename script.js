@@ -33,9 +33,6 @@ function sugondeseToggle(){
     chatBox2.style.display="none";
     chatBox3.style.display="block";
 }
-function scroll(){
-    MessageContainer.scrollTop += 10;
-  }
 
 function sendMessage1(){
     if(chatContent1.value == " "){
