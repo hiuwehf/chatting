@@ -65,15 +65,22 @@ li{
     margin:0px;
     padding:0px;
     height:90%;
+    overflow-y: scroll;
 }
+
+.messageContainer::-webkit-scrollbar {
+    display: none;
+  }
 
 p{
     font-size:30px;
     margin:15px;
-    border:2px solid white;
-    background-color: #1c1c1c;
-    width:400px;
-    display:wrap;
+    max-width: 40%;
+    color:yellow;
+    background: #918e8e;
+    border-radius: 5px;
+    padding:5px;
+    overflow-wrap: break-word;
 }
 
 .chatSection{
