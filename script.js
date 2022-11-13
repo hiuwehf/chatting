@@ -34,9 +34,17 @@ function sugondeseToggle(){
     chatBox3.style.display="block";
 }
 
+document.addEventListener('keydown', function (event){
+    if (event.keyCode == 13){
+        sendMessage1();
+        sendMessage2();
+        sendMessage3();
+    }
+})
+
 function sendMessage1(){
     if(chatContent1.value == " "){
-        alert("deez");
+        
     }else{
         (chatBox1.style.display == 'block')
         const para = document.createElement("p");
@@ -51,7 +59,7 @@ function sendMessage1(){
 
 function sendMessage2(){
     if(chatContent2.value == " "){
-        alert("Input text");
+        
     }else{
         (chatBox2.style.display == 'block')
         const para = document.createElement("p");
@@ -65,7 +73,7 @@ function sendMessage2(){
 }
 function sendMessage3(){
     if(chatContent3.value == " "){
-        alert("Input text");
+        
     }else{
         (chatBox3.style.display == 'block')
         const para = document.createElement("p");
