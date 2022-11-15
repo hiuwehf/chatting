@@ -25,36 +25,45 @@
                     <p id="chatIntroductionHeader">Welcome to my chatting page!</p>
                     <p id="chatIntroduction">Please select someone from your contact list found on the left side to start chatting!</p>
                 </div>
-
+<!-- CHATBOX 1 -->
                 <div class="chatBox" id="chatBox1" style="display:none">
-                    <div id="messageContainer1" class="messageContainer">
-                        <p class="boxHeader">This is box 1</p>
+                    <div id="messageContainerSend1" class="messageContainerSend">
                     </div>
-                    <div class="chatSection">
-                        <button id="sendButton"class="sendButton" type="submit" onclick="sendMessage1()">Send</button>
-                        <input id="chatContent1" class="chatbar" type="text">
+                    
+                    <div id="messageContainerRecieve1" class="messageContainerRecieve">
                     </div>
                 </div>
-
+<!-- CHATBOX 1 CHATBAR -->
+                <div class="chatSection" id="chatBar1" style="display:none">
+                    <button id="sendButton"class="sendButton" type="submit" onclick="sendMessage1()">Send</button>
+                    <input id="chatContent1" class="chatbar" type="text">
+                </div>
+<!-- CHATBOX 2 -->
                 <div class="chatBox" id="chatBox2" style="display:none">
-                    <div id="messageContainer2" class="messageContainer">
-                        <p class="boxHeader">This is box 2</p>
+                    <div id="messageContainerSend2" class="messageContainerSend">
                     </div>
-                    <div class="chatSection">
-                        <button id="sendButton"class="sendButton" type="submit" onclick="sendMessage2()">Send</button>
-                        <input id="chatContent2" class="chatbar" type="text">
+                    
+                    <div id="messageContainerRecieve2" class="messageContainerRecieve">
                     </div>
                 </div>
-
+<!-- CHATBOX 2 CHATBAR -->
+                <div class="chatSection" id="chatBar2" style="display:none">
+                    <button id="sendButton"class="sendButton" type="submit" onclick="sendMessage2()">Send</button>
+                    <input id="chatContent2" class="chatbar" type="text">
+                </div>
+<!-- CHATBOX 3 -->
                 <div class="chatBox" id="chatBox3" style="display:none">
-                    <div id="messageContainer3" class="messageContainer">
-                        <p class="boxHeader">This is box 3</p>
+                    <div id="messageContainerSend3" class="messageContainerSend">
                     </div>
-                    <div class="chatSection">
+                    
+                    <div id="messageContainerRecieve3" class="messageContainerRecieve">
+                    </div>
+                </div>
+<!-- CHATBOX 3 CHATBAR -->
+                <div class="chatSection" id="chatBar3" style="display:none">
                         <button id="sendButton"class="sendButton" type="submit" onclick="sendMessage3()">Send</button>
                         <input id="chatContent3" class="chatbar" type="text">
                     </div>
-                </div>
             </div>
         </div>
         <script src="./script.js"></script>
