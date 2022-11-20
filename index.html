@@ -26,6 +26,7 @@
                     <p id="chatIntroduction">Please select someone from your contact list found on the left side to start chatting!</p>
                 </div>
 <!-- CHATBOX 1 -->
+            <div class="chatContainer" id="chatContainer1">
                 <div class="chatBox" id="chatBox1" style="display:none">
                     <div id="messageContainerSend1" class="messageContainerSend">
                     </div>
@@ -33,12 +34,16 @@
                     <div id="messageContainerRecieve1" class="messageContainerRecieve">
                     </div>
                 </div>
-<!-- CHATBOX 1 CHATBAR -->
+<!-- CHATBOX 1 CHATBAR -->  
                 <div class="chatSection" id="chatBar1" style="display:none">
                     <button id="sendButton"class="sendButton" type="submit" onclick="sendMessage1()">Send</button>
                     <input id="chatContent1" class="chatbar" type="text">
                 </div>
+            </div>
+
+                
 <!-- CHATBOX 2 -->
+            <div class="chatContainer" id="chatContainer2">
                 <div class="chatBox" id="chatBox2" style="display:none">
                     <div id="messageContainerSend2" class="messageContainerSend">
                     </div>
@@ -51,7 +56,9 @@
                     <button id="sendButton"class="sendButton" type="submit" onclick="sendMessage2()">Send</button>
                     <input id="chatContent2" class="chatbar" type="text">
                 </div>
+            </div>
 <!-- CHATBOX 3 -->
+            <div class="chatContainer" id="chatContainer3">
                 <div class="chatBox" id="chatBox3" style="display:none">
                     <div id="messageContainerSend3" class="messageContainerSend">
                     </div>
@@ -61,9 +68,10 @@
                 </div>
 <!-- CHATBOX 3 CHATBAR -->
                 <div class="chatSection" id="chatBar3" style="display:none">
-                        <button id="sendButton"class="sendButton" type="submit" onclick="sendMessage3()">Send</button>
-                        <input id="chatContent3" class="chatbar" type="text">
-                    </div>
+                    <button id="sendButton"class="sendButton" type="submit" onclick="sendMessage3()">Send</button>
+                    <input id="chatContent3" class="chatbar" type="text">
+                </div>
+            </div>
             </div>
         </div>
         <script src="./script.js"></script>
