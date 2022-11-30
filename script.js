@@ -1,4 +1,10 @@
 const chatName = document.getElementById("chatNameBar");
+const createContactWindow = document.getElementById("createContactWindow");
+const createContactWindowButton = document.getElementById("createContactWindowButton");
+const deezContactButton = document.getElementById("deezContactButton");
+const homeButton = document.getElementById("homeButton");
+const contactName = document.getElementById("contactName");
+const contactList = document.getElementById("contactList");
 const chatBox0 = document.getElementById("chatBox0");
 const chatBox1 = document.getElementById("chatBox1");
 const chatBox2 = document.getElementById("chatBox2");
@@ -10,30 +16,41 @@ const chatContent1 = document.getElementById("chatContent1");
 const chatContent2 = document.getElementById("chatContent2");
 const chatContent3 = document.getElementById("chatContent3");
 
-
-
+function createContactWindowToggle(){
+    if(createContactWindow.style.display=="none"){
+        createContactWindow.style.display = "block"
+        createContactWindowButton.style.backgroundColor="#676666";
+    }else if(createContactWindow.style.display=="block"){
+        createContactWindow.style.display="none";
+        createContactWindowButton.style.backgroundColor="#918e8e";
+    }
+}
+function createContact(){
+    if(contactName.value != " "){
+        const para = document.createElement("button");
+        para.className="contact";
+        para.style.backgroundColor="#918e8e";
+        const node = document.createTextNode(contactName.value);
+        para.appendChild(node);
+        const element = contactList;
+        element.appendChild(para);
+    }
+}
 function deezToggle(){
     chatName.innerHTML = "Deez";
     chatBox0.style.display="none";
-    chatContainer1.style.display="block";
-    chatContainer2.style.display="none";
-    chatContainer3.style.display="none";
-}
-
-function ligmaToggle(){
-    chatName.innerHTML = "Ligma";
-    chatBox0.style.display="none";
-    chatContainer1.style.display="none";
-    chatContainer2.style.display="block";
-    chatContainer3.style.display="none";
-}
-
-function sugondeseToggle(){
-    chatName.innerHTML = "Sugondese";
-    chatBox0.style.display="none";
-    chatContainer1.style.display="none";
-    chatContainer2.style.display="none";
-    chatContainer3.style.display="block";
+    if(chatContainer1.style.display=="none"){
+        chatBox0.style.display="none";
+        homeButton.style.backgroundColor="#918e8e";
+        chatContainer1.style.display="block";
+        deezContactButton.style.backgroundColor="#676666";
+    }else if(chatContainer1.style.display="block"){
+        chatContainer1.style.display="none";
+        chatBox0.style.display="block";
+        homeButton.style.backgroundColor="#676666";
+        deezContactButton.style.backgroundColor="#918e8e"
+    }
+    
 }
 
 document.addEventListener('keydown', function (event){

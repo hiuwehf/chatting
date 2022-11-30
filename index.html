@@ -4,15 +4,24 @@
         <title>Chatting Site</title>
     </head>
     <body>
+        <div id="createContactWindow" style="display:none">
+            <p id="createContactIntro">Add a new contact</p>
+            <input id="contactName" class="regularInput" type="text" placeholder="Name of contact E.g. Candice">
+            <button onclick="createContactWindowToggle()" id="cancelContactButton" class="regularButton">Cancel</button>
+            <button onclick="createContact()" id="createContactButton" class="regularButton">Create Contact</button>
+        </div>
         <div id="main">
             <div id="contacts">
                 <div id="contactHeaderDiv">
                     <h1 class="contactHeading">CONTACTS</h1>
                 </div>
                 
-                <ul>
-                    <li><button onclick="deezToggle()" class="contact">Deez</button></li>
+                <ul id="contactList">
+                    <li><button onclick="homePage()" id="homeButton" class="contact regularButton" style="background-color: #676666;">Homepage</button></li>
+                    <li><button onclick="deezToggle()" id ="deezContactButton" class="contact regularButton" style="background-color: #918e8e;">Deez</button></li>
+                    <li><button onclick="createContactWindowToggle()" id="createContactWindowButton" style="background-color: #918e8e;">Create contact</button></li>
                 </ul>
+                
             </div>
             <div id="mainChat">
                 <div id="chatNameDiv">
@@ -30,7 +39,7 @@
                     </div>
 <!-- CHAT INPUT AND SEND BUTTON 1 -->
                     <div class="chatSection" id="chatSection1">
-                        <button id="sendButton"class="sendButton" type="submit" onclick="sendMessage1()">Send</button>
+                        <button id="sendButton"class="sendButton" type="submit" onclick="sendMessage()">Send</button>
                         <input id="chatContent1" class="chatbar" type="text">
                     </div>
                 </div>
